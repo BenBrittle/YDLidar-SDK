@@ -13,8 +13,8 @@ Scan data format output by LiDAR:
     <tr><th>Content       <th> Name              <th> Description
     <tr><th>PH(2B)        <td> Packet header      <td> 2 Byte in length, Fixed at 0x55AA, low is front, high in back.
     <tr><th>CT(1B)        <td> Package type       <td> Indicates the current packet type. (0x00 = CT & 0x01): Normal Point cloud packet. (0x01 = CT & 0x01): Zero packet.
-    <tr><th>LSN(1B)       <td> Sample Data Number <td> Indicates the number of sampling points contained in the current packet. There is only once zero point of data in thre zero packet. the value is 1.
-    <tr><th>FSA(2B)       <td> Starting angle     <td> The angle data corresponding to the first sample point in the smapled data.
+    <tr><th>LSN(1B)       <td> Sample Data Number <td> Indicates the number of sampling points contained in the current packet. There is only once zero point of data in three zero packet. the value is 1.
+    <tr><th>FSA(2B)       <td> Starting angle     <td> The angle data corresponding to the first sample point in the sampled data.
     <tr><th>LSA(2B)       <td> End angle          <td> The angle data corresponding to the last sample point in the sampled data.
     <tr><th>CS(2B)        <td> Check code         <td> The check code of the current data packet uses a two-byte exclusive OR to check the current data packet.
     <tr><th>Si(2B/3B)     <td> Sampling data      <td> The system test sampling data is the distance data of the sampling point.
